@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/styles/style.css">
+  <link rel="stylesheet" href="/src/styles/justify.css">
+  <title>Guía Flexbox</title>
+</head>
+<body>
+  <header>
+    <h1>La magia de Flexbox</h1>
+    <p>Edwin Rozo Gómez</p>
+  </header>
+  <main>
+    <div class="container-nav">
+      <nav>
+        <button id="btn-flex-row">flex-direction: row</button>
+        <button id="btn-flex-column">flex-direction: column</button>
+        <button id="btn-justify">justify content</button>
+        <div id="justify-content">
+          <label for="nombre"><strong>Nombre</strong></label>
+          <select class="u-full-width" id="name-justify">
+            <option value="">Seleccione</option>                        
+            <option value="center">center</option>                        
+            <option value="flex-start">flex-start</option>                        
+            <option value="flex-end">flex-end</option>                        
+            <option value="around">space-around</option>                        
+            <option value="between">space-between</option>                        
+            <option value="evenly">space-evenly</option>                        
+          </select>
+        </div>        
+      </nav>    
+    </div>
+    <section>
+      <div class="elemento-padre1">
+        <p class="father">Yo soy elemento padre</p>
+      <div id="elemento-padre">
+        <div class="elemento-hijo1">elemento hijo1</div>
+        <div class="elemento-hijo2">elemento hijo2</div>
+        <div class="elemento-hijo2">elemento hijo3</div>
+      </div>        
+      </div>
+      <div class="code">
+        <p>Code Space</p>
+        <img id="code-img" alt="Code Space">
+      </div>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.padre {
+  width: 500px;
+  height: 500px;
+  background-color: turquoise;
+  border: solid 1px blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.padre .hijo {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(5, 185, 95);
+  border: solid 1px rgb(16, 73, 2);
+}

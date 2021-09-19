@@ -1,0 +1,10 @@
+px: cantidad de punticos a ocupar.
+
+% : De acuerdo a su contenedor padre.
+
+em: Un em hace referencia al tamaño en px del párrafo. Típicamente 1em equivale a 12pt. 12pt son  16px. Tiene su origen en el ancho de la letra mayúscula M de la tipografía en uso.
+
+rem: Básicamente hace lo mismo que em, pero tiene como referencia el elemento raíz.
+
+vw: viewport width
+vh: viewport heigth

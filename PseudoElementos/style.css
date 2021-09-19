@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(100deg, rgba(24, 24, 24, 0.924), rgb(29, 76, 104), rgb(27, 41, 117));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+}
+
+.myElement {
+  width: 15em;
+  height: 8em;
+  box-shadow: 0 0 10px blue;
+  text-align: center;
+  border-radius: 10px;  
+}
+
+.element-background {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: url(https://librosostenibilidad.files.wordpress.com/2017/03/paisaje-cultura-sostenibilidad.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  opacity: 50%;  
+}
+
+h1 {
+  position: relative;
+  bottom: 110px;
+  color: rgb(162, 191, 207);
+}
+
+.myElement2 {
+  position: relative;
+  width: 15em;
+  height: 8em;
+  border-radius: 10px;
+  border: solid 1px blue;
+  margin: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.element-background2 {
+  border-radius: 10px;
+  background: url(https://services.meteored.com/img/article/el-misterioso-rayo-verde-del-atardecer-218011-3_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  z-index: -1; 
+  opacity: 0.6;
+}
+
+h2,p {
+  color:white;
+  font-weight: bold;
+}
+

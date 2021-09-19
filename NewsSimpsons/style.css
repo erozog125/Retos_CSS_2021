@@ -1,0 +1,109 @@
+body {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+}
+
+.newsletter {
+  margin-top: 1em;
+  border: solid 1px #000000;
+  width: 25rem;  
+  height: 25rem;
+  background-color: rgb(236, 234, 234);  
+}
+
+.name p {
+  font-family: 'Kalam', cursive;
+  font-weight: bold;
+  font-size: 2.5em;
+  margin: 0;
+  text-align: center;
+}
+
+.info {
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+  width: 94%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin:0 1em 0 1em;    
+}
+
+.info p {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.title {
+  display: flex;  
+  justify-content: center;
+  margin-top: -1em;
+}
+
+.title h1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.title h1 span {
+  font-size: 1.8em;
+  text-align: center;  
+  font-family: ui-monospace;
+  text-transform: uppercase;  
+}
+
+.content {
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1em;
+}
+
+.picture {
+  width: 12em;
+  height: 9em;
+  margin: 0.5em;
+}
+
+.left-side {
+  margin-top: -10px;
+}
+
+.left-side div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1em 1em;
+}
+
+h2 {
+  font-size: 1.5em;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;  
+  width: 100%;
+  display: flex;
+  margin-left: 0.2em ;  
+  margin-right: 0.2em ;  
+}
+
+.left-side p {
+  margin: 0 0 1.5em 1.5em;
+  font-size: 0.5em;
+  width: 100%;  
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-side p {
+  margin: 0;
+  font-size: 0.5em;
+}
+

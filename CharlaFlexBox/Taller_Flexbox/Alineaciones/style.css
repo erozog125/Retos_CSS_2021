@@ -1,0 +1,30 @@
+.padre{
+  width: 600px;
+  height: 600px;
+  background-color: black;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hijo {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  align-self: flex-end;
+  position: relative;
+  bottom: 150px;
+}
+
+.hijo2 {
+  width: 100px;
+  height: 100px;
+  background-color: turquoise;
+}
+
+.hijo3 {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}

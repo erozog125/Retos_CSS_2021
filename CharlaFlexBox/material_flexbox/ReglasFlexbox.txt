@@ -1,0 +1,92 @@
+Regla 1:
+* Debe existir un padre y por lo menos un hijo.
+*Con solo agregar display flex en el padre suceden dos cosas visuales:
+1. El ancho de sus hijos depende de su contenido
+2. el alto de sus hijos depende del tamaño de su contenedor
+
+Regla 2:
+* El flex container tiene dos ejes:
+
+------------------------------------------------------------
+|                           .                              |
+|             Flex Container(Contenedor Padre)             |
+|                           .                              |
+|                           .                              |
+|              |-------| |-------| |-------|               |
+|              | Item  | |  Item | | Item  |               |
+|..............| hijo  | |  hijo | | hijo  |...............|
+|              |-------| |-------| |-------|               |
+|                           .                              |
+|                           .                              |
+|                           .                              |
+|                           .                              |
+------------------------------------------------------------
+
+Eje principal(X)
+Eje Secundario(Y)
+
+//(Con flex direction determino la orientación del eje principal)
+
+Regla 3:
+* Podemos modificar el eje principal con la propiedad flex-direction:
+1. Row por defecto, hijos en eje horizontal.
+2. column, sus hijos en eje vertical.
+//SON LAS DOS QUE MÁS SE USAN
+
+Regla 4:
+
+* Podemos permitir el salto de columnas con flex-Wrap, es decir
+
+flex-wrap: wrap(wrap1)
+flex-wrap: nowrap(wrap2)
+
+Regla 5:
+
+* Alineamos los items(hijos) cpn propiedad: justify-content aplicado al container(componente padre).
+
+justify-content: center(just1)
+justify-content: end(just2)
+justify-content: flex-end(just3)
+justify-content: flex-start(just4)
+justify-content: space-around(just5)
+justify-content: space-between(just6)
+justify-content: space-evenly(just7)
+
+* Regla 6:
+Para alinear los ítems(hijos) usamos propiedad alig-items(imagen alignItems)
+
+* Regla 7:
+Para alinear los ítems(hijos) de forma individual usando align-self pero sobre el eje secundario:(Imagen Align-Self)
+
+* Regla 8:
+Los ítems(hijos), ignoran algunas propiedades: float, clear, vertical-align.
+
+*Regla 9:
+Podemos modificar el tamaño de los ítems(hijos) con: flex-grow, flex-shrink, flex-basis
+NOTA: Recordemos que por defecto, el tamaño de los ítems se da por su contenido.
+
+Entonces -->
+
+flex-grow: Si sobra espacio en el contenedor, el ítem(hijo) siempre puede crecer, su valor por defecto es 0.
+Define el tamaño que crecerá un hijo en relación a sus hermanos.
+IMPORTANTE: este trabaja siempre que tenga espacio en el contenedor.(Imagen: flex-grow)
+En pocas palabras, es repartir el espacio disponible.
+
+ flex-basis: define el tamaño inicial del ítem(hijo).
+
+ Regla 10:
+
+ * Podemos definir todo con la propiedad flex. en su orden
+ primer valor flex-grow
+ segundo valor flex-shrink
+ tercer valor flex-basis
+ Ejemplo: flex: 0 1 100px;
+
+ Regla 11:
+ * Re ordenar los hijoscon propiedad order.(Imagen:Order)
+ De izquierda a derecha, el orden va de menor a mayor.
+
+
+
+
+

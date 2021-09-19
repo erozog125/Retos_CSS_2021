@@ -1,0 +1,33 @@
+
+h2 {
+    margin: 0;
+}
+.servicios {
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    height: 50em;
+    border: solid 1px red;
+}
+
+.servicio {
+    color: white;
+    text-align: center;
+}
+
+.servicio-1 {
+    background-color: darkviolet;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.servicio-2 {
+    background-color: limegreen;
+}
+.servicio-3 {
+    background-color: teal;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: 1 / 3;
+}

@@ -1,0 +1,27 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(168, 11, 116);
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  background-color: pink;
+  border: solid white 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-container {
+  width: 400rem;
+  height: 400rem;
+  background-color: rgb(185, 10, 238);
+  border: solid black 3px;
+}

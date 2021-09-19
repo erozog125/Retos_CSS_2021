@@ -1,0 +1,85 @@
+body {
+  align-items: center;
+  background-color: #00154e;
+  display: flex;
+  height: 100vh;
+  justify-content: center;    
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.card {
+  width: 30rem;
+  height: 40rem;  
+  background-color: #ffff;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-card1 {
+  width: 100%;
+  height: 40%;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-card1 h1 {
+  color: #f1bd01;
+  font-size: 3rem;
+  font-weight: 800;  
+}
+
+.sub-card1 .fas {
+  text-align: right;
+  position: relative;
+  left: 13rem;
+  bottom: 6rem;
+  font-size: 1.5rem;
+  color: #191A1C;
+}
+
+.sub-card1 img {
+  width: 80%;
+  text-align: center;
+}
+
+.sub-card1 .fas:hover {
+  background-color: #7293f0;
+  border-radius: 50%;
+}
+
+.sub-card2 {
+  width: 100%;
+  height: 60%;  
+  border-top-left-radius: 70%;
+  background-color: #191A1C;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.sub-card2 .info {
+  margin: 0 2rem 2rem 0;
+}
+
+.sub-card2 p {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 0.5rem;
+}
+
+.sub-card2 .networks {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sub-card2 i {
+  font-size: 2rem;
+  color: #f1bd01;
+}

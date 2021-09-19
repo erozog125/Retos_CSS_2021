@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Lobster&family=Open+Sans:ital,wght@0,400;1,300&display=swap");
+.button {
+  box-shadow: 3px 4px 0px 0px #0a467a;
+  background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+  background-color: #79bbff;
+  border-radius: 5px;
+  border: 1px solid #337bc4;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 12px 44px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #528ecc;
+}
+
+body {
+  background-color: rgba(21, 21, 31, 0.836);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "lobster";
+  background: linear-gradient(#036674, #bfeaf0);
+  color: transparent;
+  -webkit-background-clip: text;
+  box-shadow: 0 0 11px #05f1e6;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

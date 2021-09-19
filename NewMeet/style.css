@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #202124;
+  width: 100vw;
+  height: 100vh;
+  display: flex;  
+}
+
+.container-people {
+  width: 70%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container-chat {
+  width: 30%;
+  border-radius: 10px;
+  height: 40em;
+  background-color: #ffff;
+  margin: 3em;
+}
+
+.container-chat header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 1em;
+}
+
+.container-chat header h1 {
+  font-size: 1.1em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #292929;
+}
+
+.lookMessage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5em 1em;
+  background-color: rgba(240, 248, 255, 0.815);
+}
+
+.lookMessage p {
+  font-size: 0.8em;
+}
+
+.far,
+.fas {
+  font-size: 1.5em;
+}
+
+.fas {
+  color: #1A73E8;
+}
+
+.cards-members {
+  width: 24%;
+  height: 28%;
+  background-color: #3C4043;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+}
+
+.fa-microphone {
+  width: 1em;
+  padding: 2%;
+  text-align: center;
+  align-self: flex-end;
+  margin: 0.5em;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.img {
+  background-color: brown;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 3em;
+  color: white;
+}
+
+footer {
+  /* width: 100%; */
+  height: 5%;
+  align-self: flex-end;  
+}

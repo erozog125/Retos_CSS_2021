@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/cake.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <title>Card Animations</title>
+</head>
+<body>
+  <h1>Happy Birthday Mom</h1>  
+  <audio controls="controls" src="/fc.mp3" autoplay loop></audio>
+  <div class="card">
+    <span>To: Luz Enidt</span>
+    <div class="sub-card">      
+      <button id="btn-touch">==></button>
+    </div>    
+  </div>
+  <div id="into-card" class="into-card">
+    <span>
+      Feliz cumpleaños. Toda tu familia te ama enormente...
+      <i class="fas fa-birthday-cake"></i>
+      <i class="fas fa-birthday-cake"></i>
+      <i class="fas fa-birthday-cake"></i>
+      <i class="fas fa-birthday-cake"></i>
+    </span>
+  </div>
+  <div class="image">
+      <img class="image-picture" src="/imgFc.jpeg" alt="Feliz cumple Madre">
+      <span>Gustavo-Luz-Nata-Nico</span>
+  </div>    
+  <script>
+    window.addEventListener('load', sendMsj);
+    function showCard() {
+      const picture = document.querySelector('.image');    
+      const card = document.getElementById('into-card');
+      picture.style.opacity = 0;
+      card.classList.add('animated');
+      setTimeout(() => {
+        picture.style.opacity = 1;
+      },3000);
+      setTimeout(() => {
+        card.style.left = '384px';
+        card.classList.remove('animated');
+      },5000);      
+    }
+    function sendMsj() {
+      const card = document.getElementById('into-card');
+      card.style.left = '20px';
+      const btnLoad = document.getElementById('btn-touch');
+      btnLoad.addEventListener('click', showCard);           
+    }
+  </script>
+</body>
+</html>

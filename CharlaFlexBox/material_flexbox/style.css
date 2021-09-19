@@ -1,0 +1,80 @@
+body {
+  background-color: turquoise;
+}
+
+h1 {
+  text-align: center;  
+  font-size: 4em;
+  font-weight: bold;
+  text-shadow: -10px -10px 0 rgb(4, 190, 236),
+               -11px -11px 0 rgb(8, 8, 8),
+               -12px -12px 0 rgb(5, 5, 5),
+               -13px -13px 0 rgb(7, 7, 7),
+               -14px -14px 0 rgb(2, 2, 2),
+               -15px -15px 0 rgb(12, 12, 12),
+               -16px -16px 0 rgb(2, 2, 2),
+               -17px -17px 0 rgb(5, 5, 5),
+               -18px -18px 0 rgb(3, 3, 3);
+  color: transparent;
+}
+
+section {
+  width: 30em;
+  height: 15em;
+  border: solid blue;
+  margin: 0 auto;
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;    
+}
+
+.box1 {
+  background-color: black;
+  color:white;
+  font-weight: bold;
+  height: 5em;
+  display: flex; 
+  align-items: center;   
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: 1em;
+  order: 4;
+}
+
+.box2 {
+  background-color:brown;
+  color:white;
+  font-weight: bold;
+  height: 5em;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: 1em;
+}
+.box3 {
+  background-color:violet;
+  color:white;
+  font-weight: bold;
+  height: 5em;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  flex-grow: 1; 
+  flex-basis: 1em; 
+}
+
+.box4 {
+  background-color:green;
+  color:white;
+  font-weight: bold;
+  height: 5em;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  flex-grow: 1; 
+  flex-basis: 1em; 
+}

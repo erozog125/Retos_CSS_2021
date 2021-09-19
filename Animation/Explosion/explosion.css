@@ -1,0 +1,56 @@
+.div-element {
+  width: 90%;
+  height: 50px;
+  position: relative;  
+  bottom: 380px;  
+}
+
+.div__element-name {
+  color: rgb(33, 55, 83);
+  font-size: 10em;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;   
+}
+
+.div__element-name:hover {
+  color: rgb(75, 2, 2);
+  animation-name: explosion;
+  animation-duration: 5s; 
+  animation-iteration-count: infinite;  
+}
+
+@keyframes explosion {
+  0% {
+  text-shadow: 10px 10px 20px green,
+  20px 20px 20px rgb(2, 223, 223),30px 30px 20px rgb(187, 218, 17),
+  40px 40px 20px rgb(241, 14, 223),50px 50px 20px rgb(247, 7, 99),
+  -40px -40px 20px rgb(16, 29, 223),-50px -50px 20px rgb(42, 105, 42),
+  -30px -30px 20px rgb(247, 247, 247),-20px -20px 20px rgb(248, 93, 2), -10px -10px 20px rebeccapurple;
+  }
+
+  50% {
+    text-shadow: -10px -10px 20px green,
+    -20px -20px 20px rgb(2, 223, 223),-30px -30px 20px rgb(187, 218, 17),
+    -40px -40px 20px rgb(241, 14, 223),-50px -50px 20px rgb(247, 7, 99),
+    40px 40px 20px rgb(16, 29, 223),50px 50px 20px rgb(42, 105, 42),
+    30px 30px 20px rgb(247, 247, 247),20px 20px 20px rgb(248, 93, 2), 10px 10px 20px rebeccapurple;
+  }
+
+  100% {
+    text-shadow: 10px -10px 20px green,
+    20px -20px 20px rgb(2, 223, 223),30px -30px 20px rgb(187, 218, 17),
+    40px -40px 20px rgb(241, 14, 223),50px -50px 20px rgb(247, 7, 99),
+    -40px 40px 20px rgb(16, 29, 223),-50px 50px 20px rgb(42, 105, 42),
+    -30px 30px 20px rgb(247, 247, 247),-20px 20px 20px rgb(248, 93, 2), -10px 10px 20px rebeccapurple;
+  }
+}
+
+
+  
+  
+
+
+
+
+

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root {
+  --color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 90px auto;
+  grid-template-rows: 60px auto;
+  grid-template-areas: 'header header'
+                       'menu container';
+  transition: all .3s ease;
+}
+
+.container.active {
+  grid-template-columns: 300px auto;
+}
+
+.header {
+  grid-area: header;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-content: space-between;
+  grid-gap: 20px;
+  grid-template-areas: "logo search icons";
+
+}
+
+.menu-lateral {
+  background-color: rgb(70, 68, 68);
+  color: var(--color);
+  grid-area: menu;
+}
+
+.main {
+  background-color: rgb(41, 40, 40);
+  color: var(--color);
+  grid-area: container;
+}
+
+.header .container-logo {
+  grid-area: logo;
+  display: flex;
+  align-items: center;  
+}
+
+.header .container-logo .btn-menu {
+  border: none;
+  padding: 10px;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  position: relative;
+  top: 3px;
+}
+
+.header .container-logo .btn-menu:hover {
+  background-color: #e7e7e7 ;
+}
+
+.header .container-logo .logo {
+  color: red;
+  text-decoration: none;
+  font-weight: 900;
+  font-family: "Bebas Neue", 'Courier New', Courier, monospace;
+}
+
+.header .container-logo .logo i {  
+  font-size: 25px;
+  position: relative;
+  top: 3px;
+  padding-right: 5px;
+}
+
+.header .container-logo span {
+  color: #000;
+}
+
+.header .bar-search {
+  grid-area: search;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.header .bar-search input {
+  min-width: 60%;
+  padding: 0 15px;
+  height: 35px;
+  line-height: 35px;
+  border: solid #ccc 1px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header .bar-search button {
+  height: 35px;
+  border: 1px #ccc solid;
+  border-left: none;
+  color: #545454;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  padding: 0 25px;
+}
+
+.header .bar-search button .microphone {
+  font-size: 20px;  
+}
+
+.header .bar-search button:hover {
+  background-color: #f5f5f5;
+}
+
+.header .btn-header {
+  grid-area: icons;     
+  width: 160px;
+  height: 40px;
+  display: flex;
+  padding: 0 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .btn-header button {
+  width: 25px;
+  height: 25px;
+  background-color: #ffff;
+  border: none;
+}
+
+.header .btn-header button:hover {
+  border-radius: 100%;
+  background-color: #b4b4b4f5;
+  cursor: pointer;
+}
+
+
+.header .avatar img {
+  width: 30px;
+  border-radius: 50%;  
+}
+
